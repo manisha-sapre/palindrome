@@ -7,10 +7,10 @@ public class DNAPalindrome {
 		@ author msapre
 		Scanner sc = new Scanner(System.in);
 		Integer num1=0;
-		System.out.println("Please enter the original number");
+		System.out.println("enter the original sequence");
 		num1 = sc.nextInt();
 		Integer org = num1;
-		System.out.println("Original number is =" +org);
+		System.out.println("Original sequence is =" +org);
 		Integer rev = 0;
 		while( num1 != 0 )
 	      {
@@ -19,14 +19,14 @@ public class DNAPalindrome {
 	        num1 = num1/10;
 	      }
 		
-		System.out.println("Reverse number is =" +rev);
+		System.out.println("Reverse sequence is =" +rev);
 		if(org == rev)
 		{
-			System.out.println("Given number is a palindrome");
+			System.out.println("Given sequence is a palindrome");
 		}
 		else
 		{
-			System.out.println("Given number is not a palindrome");
+			System.out.println("Given sequence is not a palindrome");
 		}
 	}
 }
